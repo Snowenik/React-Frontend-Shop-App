@@ -1,0 +1,173 @@
+.headerContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: hsl(200, 13%, 9%);
+  padding: 0.7rem 0;
+}
+
+.linkContainer {
+  position: relative;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.linkContainer:nth-child(1) {
+  margin-right: 35%;
+}
+
+.imgContainer {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.imgContainer img {
+  max-width: 100%;
+  width: 80%;
+  height: auto;
+}
+
+.dropDown {
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  cursor: pointer;
+  background-color: hsl(200, 13%, 9%);
+}
+
+.dropDownMenu {
+  background-color: hsl(200, 13%, 9%);
+}
+
+.itemContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  /* border-bottom: 2px black solid; */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+}
+
+.itemImageContainer {
+  width: 50%;
+  z-index: -1;
+  text-align: center;
+}
+
+.itemImageContainer img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.itemContainer p {
+  text-align: center;
+}
+
+.itemInfoContainer {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.itemInfoContainer p {
+  font-size: 0.8rem;
+}
+
+.itemContainer p:nth-child(2) {
+  font-weight: 700;
+}
+
+.itemList {
+  width: 80%;
+  height: 80vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  overflow-y: scroll;
+}
+
+.bottomDiv {
+  height: 30vh;
+}
+.itemContainer:last-child {
+  border: none;
+}
+
+.headerContainer > div p {
+  color: white;
+}
+
+.headerContainer div:first-child {
+  margin-left: 5%;
+}
+
+.headerContainer button {
+  background-color: hsl(200, 13%, 9%);
+  border: none;
+  color: white;
+}
+
+.personIcon {
+  margin-left: auto;
+  margin-right: 1rem;
+}
+
+.personButton {
+  margin-left: auto;
+  margin-right: 1rem;
+}
+
+[data-reach-menu-item] {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin: 0.5rem 0;
+}
+
+[data-reach-menu-list] {
+  background-color: hsl(200, 13%, 9%);
+  padding: 0.3rem 0.2rem;
+}
+
+.userMenu {
+  margin-left: auto;
+  margin-right: 8vw;
+}
+
+.itemLink {
+  text-decoration: none;
+  color: black;
+}
+
+@media (min-width: 900px) {
+  .link {
+    font-size: 1.75rem;
+  }
+  .imgContainer img {
+    width: 60%;
+  }
+  .dropDown {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+  }
+
+  .itemInfoContainer p {
+    font-size: 1.2rem;
+  }
+}

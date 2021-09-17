@@ -1,0 +1,156 @@
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: hsl(200, 13%, 9%);
+  color: white;
+  padding: 0.7rem 0;
+}
+
+.linkContainer {
+  position: relative;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.headerContainer > div p {
+  color: white;
+}
+
+.headerContainer div:first-child {
+  margin-left: 5%;
+}
+
+.headerContainer button {
+  background-color: hsl(200, 13%, 9%);
+  border: none;
+  color: white;
+}
+
+.personIcon {
+  margin-left: auto;
+  margin-right: 1rem;
+}
+
+[data-reach-menu-item] {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin: 0.5rem 0;
+}
+
+[data-reach-menu-list] {
+  background-color: hsl(200, 13%, 9%);
+  padding: 0.3rem 0.2rem;
+}
+
+.userMenu {
+  margin-left: auto;
+  margin-right: 8vw;
+}
+
+.infoHeader {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+  background-color: hsl(200, 13%, 9%);
+}
+
+.infoHeader p {
+  font-size: 1.5rem;
+  color: white;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+.itemContainer {
+  display: flex;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.imageContainer {
+  width: 100%;
+  text-align: center;
+}
+
+.imageContainer img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.secondDiv {
+}
+
+.infoContainer {
+  padding: 1rem;
+  text-align: center;
+}
+
+.infoContainer p {
+  margin-bottom: 2rem;
+}
+
+.infoContainer p:last-child {
+  font-weight: 700;
+  text-align: center;
+}
+
+.buttonContainer {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* .buttonContainer button {
+  background-color: hsl(106, 39%, 49%);
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+} */
+
+.basketLink {
+  background-color: hsl(106, 39%, 49%);
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  text-decoration: none;
+}
+
+@media (min-width: 900px) {
+  .imageContainer img {
+    width: 50%;
+  }
+
+  .infoContainer p {
+    font-size: 1.25rem;
+  }
+
+  .buttonContainer button {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+  .basketLink:hover {
+    background-color: hsl(106, 39%, 40%);
+  }
+
+  .itemContainer {
+    margin-top: 5rem;
+  }
+
+  .infoHeader p {
+    padding: 1rem 0;
+  }
+}

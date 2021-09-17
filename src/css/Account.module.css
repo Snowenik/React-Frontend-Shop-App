@@ -1,0 +1,198 @@
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: hsl(200, 13%, 9%);
+  color: white;
+  padding: 0.7rem 0;
+}
+
+.linkContainer {
+  position: relative;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.headerContainer > div p {
+  color: white;
+}
+
+.headerContainer div:first-child {
+  margin-left: 5%;
+}
+
+.headerContainer button {
+  background-color: hsl(200, 13%, 9%);
+  border: none;
+  color: white;
+}
+
+.personIcon {
+  margin-left: auto;
+  margin-right: 1rem;
+}
+
+[data-reach-menu-item] {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin: 0.5rem 0;
+}
+
+[data-reach-menu-list] {
+  background-color: hsl(200, 13%, 9%);
+  padding: 0.3rem 0.2rem;
+}
+
+.userMenu {
+  margin-left: auto;
+  margin-right: 8vw;
+}
+
+.imageContainer {
+  width: 100%;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.imageContainer img {
+  max-width: 100%;
+  width: 50%;
+  height: auto;
+}
+
+.accountBalance {
+  text-align: center;
+}
+
+.accountBalance p {
+  font-weight: 700;
+}
+
+.manageAccount {
+  display: flex;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.manageAccount button {
+  background-color: hsl(200, 13%, 9%);
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  width: 10rem;
+  border-radius: 1rem;
+}
+
+.manageAccount > div {
+  margin-bottom: 5%;
+}
+
+.modalContainer {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modalContent {
+  position: relative;
+  background-color: #fefefe;
+  border: 1px solid #888;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+.modalContainer label {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 5%;
+}
+
+.modalContent input {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+.closeButton {
+  position: absolute;
+  top: 2vh;
+  right: 5vw;
+}
+
+.closeButton button {
+  background-color: hsl(200, 13%, 9%);
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+  width: 8vw;
+}
+
+.modalContent input[type="submit"] {
+  background-color: hsl(200, 13%, 9%);
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  width: 10rem;
+  margin-bottom: 5%;
+}
+
+@media (min-width: 900px) {
+  .accountBalance p {
+    font-size: 1.5rem;
+  }
+
+  .manageAccount button {
+    font-size: 1.5rem;
+    width: 20rem;
+  }
+
+  .manageAccount button:hover {
+    background-color: hsl(200, 13%, 20%);
+  }
+
+  .modalContent input {
+    font-size: 1.5rem;
+  }
+
+  .modalContainer label {
+    font-size: 1.5rem;
+  }
+
+  .modalContent input[type="submit"] {
+    font-size: 1.5rem;
+    width: 20rem;
+  }
+
+  .modalContent input[type="submit"]:hover {
+    background-color: hsl(200, 13%, 20%);
+  }
+
+  .imageContainer img {
+    width: 30%;
+  }
+}

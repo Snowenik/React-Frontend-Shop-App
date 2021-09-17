@@ -1,0 +1,118 @@
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: hsl(200, 13%, 9%);
+  color: white;
+  padding: 0.7rem 0;
+}
+
+.linkContainer {
+  position: relative;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.headerContainer > div p {
+  color: white;
+}
+
+.headerContainer div:first-child {
+  margin-left: 5%;
+}
+
+.headerContainer button {
+  background-color: hsl(200, 13%, 9%);
+  border: none;
+  color: white;
+}
+
+.personIcon {
+  margin-left: auto;
+  margin-right: 1rem;
+}
+
+[data-reach-menu-item] {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin: 0.5rem 0;
+}
+
+[data-reach-menu-list] {
+  background-color: hsl(200, 13%, 9%);
+  padding: 0.3rem 0.2rem;
+}
+
+.userMenu {
+  margin-left: auto;
+  margin-right: 8vw;
+}
+
+.avatarContainer {
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.avatarContainer img {
+  max-width: 100%;
+  width: 60%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.settingsContainer {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.settingsContainer p {
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.settingsContainer button {
+  background-color: hsl(200, 13%, 9%);
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+.settingsContainer > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media (min-width: 600px) {
+  .avatarContainer img {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .avatarContainer img {
+    width: 25%;
+  }
+  .settingsContainer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .settingsContainer > div {
+    flex-direction: column;
+  }
+
+  .settingsContainer button:hover {
+    background-color: hsl(200, 13%, 20%);
+  }
+}
