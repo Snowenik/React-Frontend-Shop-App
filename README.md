@@ -1,4 +1,4 @@
-# Frontend aplikacji bankowej React
+# Frontend aplikacji sklepu komputerowego React
 
 
 
